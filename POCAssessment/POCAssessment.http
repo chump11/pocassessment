@@ -1,0 +1,25 @@
+@POCAssessment_HostAddress = https://localhost:7104
+
+GET {{POCAssessment_HostAddress}}/api/products/filter
+Accept: application/json
+###
+
+GET {{POCAssessment_HostAddress}}/api/products/filter?minprice=5&maxprice=20&size=medium&highlight=green,blue
+Accept: application/json
+
+###
+
+GET {{POCAssessment_HostAddress}}/api/products/filter?minprice=5&maxprice=20&size=medium
+Accept: application/json
+
+###
+
+GET {{POCAssessment_HostAddress}}/api/products/filter?minprice=5&maxprice=20
+Accept: application/json
+
+###
+
+GET {{POCAssessment_HostAddress}}/api/products/filter?maxprice=20
+Accept: application/json
+
+###
